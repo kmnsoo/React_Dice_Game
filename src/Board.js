@@ -1,8 +1,10 @@
 import Dice from "./Dice";
 
+function Board({name, color, gameHistory}) {
 
+    const num = gameHistory[gameHistory.length -1] || 1;
+    const sum = gameHistory.reduce((a, b)=> a+b, 0);
 
-function Board({name, color, num, sum, gameHistory}) {
     return (
     <div>
         <h2>{name}</h2>
@@ -16,4 +18,6 @@ function Board({name, color, num, sum, gameHistory}) {
 }
 
 export default Board;
+
+
 
