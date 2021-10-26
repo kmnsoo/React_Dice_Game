@@ -1,17 +1,43 @@
-import React from 'react';
+// 
+
+
+// const WINS = {
+//   rock: 'scissor',
+//   sissor: 'paper',
+//   paper: 'rock',
+// };
+
+//   function getResult(left, right){
+//     if (WINS[left] === right) return '승리';
+//     else if (left === WINS[right] )return '패배';
+//     return '무승부';
+//   }
+//   function handlClick() {
+//     console.log('가위 바위 보 !.');
+//   }
+//   const me = 'rock';
+//   const other = 'scissor';
+
+// ReactDOM.render(
+//   <>
+// <h1>
+//   가위 바위 보
+// </h1>
+// <h2>{getResult(me, other)}</h2>
+// <button >가위</button>
+// <button >바위</button>
+// <button >보</button>
+
+
+
+//  </>,
+//   document.getElementById('root')
+// );
+
+
+
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './App'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render (<App />, document.getElementById('root'));
